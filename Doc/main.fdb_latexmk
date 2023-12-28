@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1703789661 "main.xdv" "main.pdf" "main" 1703789661 0
-  "main.xdv" 1703789661 170460 012d80a2ec2a2e19ba3fb9e1941a094e "xelatex"
+["xdvipdfmx"] 1703790170 "main.xdv" "main.pdf" "main" 1703790170 0
+  "main.xdv" 1703790170 174840 36eebd35cbd28f8e50222c78975bbb0f "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1703789661 "/Users/alfonsomateos/Documents/PONTS/PROGR/ExtraWork/Doc/main.tex" "main.xdv" "main" 1703789661 0
-  "/Users/alfonsomateos/Documents/PONTS/PROGR/ExtraWork/Doc/main.tex" 1703789661 16610 3356b15f2db81acaad52b7880c782133 ""
+["xelatex"] 1703790169 "/Users/alfonsomateos/Documents/PONTS/PROGR/ExtraWork/Doc/main.tex" "main.xdv" "main" 1703790170 0
+  "/Users/alfonsomateos/Documents/PONTS/PROGR/ExtraWork/Doc/main.tex" 1703790169 17125 075d320bd87becbe230b8784dc6d7404 ""
   "/usr/local/texlive/2023basic/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2023basic/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023basic/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -184,10 +184,10 @@
   "/usr/local/texlive/2023basic/texmf-var/web2c/xetex/xelatex.fmt" 1701275228 10020920 1c4891007d0a1efec7f6450a28bf79fa ""
   "/usr/local/texlive/2023basic/texmf.cnf" 1678817979 628 bde3cc671e29677eea4172140533535c ""
   "logo-enpc.eps" 1703525073 586786 2481599d970520a68364592352c92496 ""
-  "main.aux" 1703789661 2984 b0a22ff2b40f070b4d9f38062b0c0645 "xelatex"
-  "main.out" 1703789661 3426 1156cef8e43fb2e527e0cce38668ec7d "xelatex"
-  "main.tex" 1703789661 16610 3356b15f2db81acaad52b7880c782133 ""
-  "main.toc" 1703789661 1887 918fc9ae632a46d4bd34e67592735801 "xelatex"
+  "main.aux" 1703790170 2984 48f453cd602e655aed87b246221f467a "xelatex"
+  "main.out" 1703790170 3426 1156cef8e43fb2e527e0cce38668ec7d "xelatex"
+  "main.tex" 1703790169 17125 075d320bd87becbe230b8784dc6d7404 ""
+  "main.toc" 1703790170 1887 ebe97cdf0bc8a17ad18a7f7313133d7d "xelatex"
   "structure.tex" 1703769936 8587 8a6f61408ff32dd7a6a26d4afe1e0952 ""
   (generated)
   "main.aux"

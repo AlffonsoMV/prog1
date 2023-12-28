@@ -32,7 +32,7 @@
         Alfonso Mateos Vicente \\
         \vspace{0.5cm}
         \Large
-        \textbf{Mentor:} \\
+        \textbf{Tutor:} \\
         \vspace{0.25cm}
         \LARGE
         Prof. Pascal Monasse
@@ -47,7 +47,7 @@
         Mathematics and Computer Engineering \\
         École des Ponts ParisTech \\
         France \\
-        November 20, 2023
+        December 15, 2023
     \end{center}
     \restoregeometry
 \end{titlepage}
@@ -176,6 +176,15 @@ Activation functions are crucial in introducing non-linearity to the network, al
 
 ReLU promotes faster convergence in SGD by maintaining a linear behavior for positive inputs while nullifying negative inputs, thus simplifying the optimization landscape.
 
+- \textbf{TanH Function}: The Hyperbolic Tangent (TanH) function is similar to the sigmoid function but maps the input values to a range between -1 and 1. It is particularly useful when the model needs to normalize the output, and is mathematically expressed as:
+
+\begin{equation}
+    TanH(x) = \frac{e^{x} - e^{-x}}{e^{x} + e^{-x}}
+\end{equation}
+
+TanH, like Sigmoid, is also S-shaped but provides the advantage of having outputs centered around zero, which often leads to improved convergence during training. This zero-centered nature makes it more suitable for layers that are not output layers, especially in deep networks.
+
+
 \section{Experimental Results}
 
 With the neural network already implemented, we wanted to prove if it was really working. For this aims we started with the usual logical problems, this is using the logical doors like AND, OR etc. to know if it was working. When we achieved good results with each door, we thought that maybe we could take a bigger dataset and give it to the neural network to see what happens. With this idea in mind we landed to the \textit{Adult dataset} provided by \textit{https://archive.ics.uci.edu/dataset/2/adult}. The idea of this dataset is to predict whether income exceeds 50.000\$ per year based on census data. Also known as ``Census Income'' dataset.
@@ -246,8 +255,8 @@ For our experiment, we designed a neural network with the following specificatio
     \item \textbf{Layer 2:} Batch Normalization Layer to normalize inputs for 13 features, enhancing training stability.
     \item \textbf{Layer 3:} Fully Connected Layer transitioning from 13 to 8 neurons, utilizing TanH activation for non-linear transformation.
     \item \textbf{Layer 4:} Fully Connected Layer narrowing down from 8 to 1 neuron, with Sigmoid activation for binary classification.
-    \item \textbf{Number of Epochs:} 100, allowing ample iterations for network training.
-    \item \textbf{Learning Rate:} 0.05, chosen to balance the speed and stability of the learning process.
+    \item \textbf{Number of Epochs:} 100.
+    \item \textbf{Learning Rate:} 0.05.
 \end{itemize}
 
 \subsection{Results and Analysis}
