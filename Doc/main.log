@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.11.29)  25 DEC 2023 18:32
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.11.29)  28 DEC 2023 19:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -879,30 +879,30 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 16.
  (/usr/local/texlive/2023basic/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 \c@lstlisting=\count362
 
 *geometry* driver: auto-detecting
@@ -939,7 +939,7 @@ LaTeX Font Info:    ... okay on input line 17.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 17.
+Package hyperref Info: Link coloring OFF on input line 16.
 (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -977,37 +977,37 @@ Package hyperref Info: Link coloring OFF on input line 17.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Font shape `TU/XCharter(0)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 24.
+(Font)              scaled to size 24.88pt on input line 23.
 Requested font "[XCharter-Roman.otf]/OT:script=latn;language=dflt;+tnum;+lnum;+cv01=0;mapping=tex-text;" at 24.88pt
  -> /usr/local/texlive/2023basic/texmf-dist/fonts/opentype/public/xcharter/XCharter-Roman.otf
 LaTeX Font Info:    Font shape `TU/XCharter(0)/b/n' will be
-(Font)              scaled to size 24.88pt on input line 25.
+(Font)              scaled to size 24.88pt on input line 24.
 Requested font "[XCharter-Bold.otf]/OT:script=latn;language=dflt;+tnum;+lnum;+cv01=0;mapping=tex-text;" at 24.88pt
  -> /usr/local/texlive/2023basic/texmf-dist/fonts/opentype/public/xcharter/XCharter-Bold.otf
 LaTeX Font Info:    Font shape `TU/XCharter(0)/b/it' will be
-(Font)              scaled to size 24.88pt on input line 25.
+(Font)              scaled to size 24.88pt on input line 24.
 Requested font "[XCharter-BoldItalic.otf]/OT:script=latn;language=dflt;+tnum;+lnum;+cv01=0;mapping=tex-text;" at 24.88pt
  -> /usr/local/texlive/2023basic/texmf-dist/fonts/opentype/public/xcharter/XCharter-BoldItalic.otf
 LaTeX Font Info:    Font shape `TU/XCharter(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 29.
+(Font)              scaled to size 14.4pt on input line 28.
 Requested font "[XCharter-Roman.otf]/OT:script=latn;language=dflt;+tnum;+lnum;+cv01=0;mapping=tex-text;" at 14.4pt
  -> /usr/local/texlive/2023basic/texmf-dist/fonts/opentype/public/xcharter/XCharter-Roman.otf
 LaTeX Font Info:    Font shape `TU/XCharter(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 30.
+(Font)              scaled to size 14.4pt on input line 29.
 Requested font "[XCharter-Bold.otf]/OT:script=latn;language=dflt;+tnum;+lnum;+cv01=0;mapping=tex-text;" at 14.4pt
  -> /usr/local/texlive/2023basic/texmf-dist/fonts/opentype/public/xcharter/XCharter-Bold.otf
 LaTeX Font Info:    Font shape `TU/XCharter(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 32.
+(Font)              scaled to size 17.28pt on input line 31.
 Requested font "[XCharter-Roman.otf]/OT:script=latn;language=dflt;+tnum;+lnum;+cv01=0;mapping=tex-text;" at 17.28pt
  -> /usr/local/texlive/2023basic/texmf-dist/fonts/opentype/public/xcharter/XCharter-Roman.otf
-Invalid UTF-8 byte or sequence at line 43 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 43 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 43 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 43 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 43 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 43 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 43 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 43 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 42 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 42 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 42 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 42 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 42 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 42 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 42 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 42 replaced by U+FFFD.
 File: ./logo-enpc.eps Graphic file (type eps)
 <./logo-enpc.eps>
  [1
@@ -1018,31 +1018,73 @@ LaTeX Font Info:    Font shape `TU/XCharter(0)/b/n' will be
 (Font)              scaled to size 10.0pt on input line 1.
 Requested font "[XCharter-Bold.otf]/OT:script=latn;language=dflt;+tnum;+lnum;+cv01=0;mapping=tex-text;" at 10.0pt
  -> /usr/local/texlive/2023basic/texmf-dist/fonts/opentype/public/xcharter/XCharter-Bold.otf
+Requested font "cmex7" at 7.0pt
+ -> /usr/local/texlive/2023basic/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+Requested font "cmex7" at 5.0pt
+ -> /usr/local/texlive/2023basic/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+ (/usr/local/texlive/2023basic/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+Requested font "msam10" at 10.0pt
+ -> /usr/local/texlive/2023basic/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+Requested font "msam7" at 7.0pt
+ -> /usr/local/texlive/2023basic/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+Requested font "msam5" at 5.0pt
+ -> /usr/local/texlive/2023basic/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+ (/usr/local/texlive/2023basic/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Requested font "msbm10" at 10.0pt
+ -> /usr/local/texlive/2023basic/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+Requested font "msbm7" at 7.0pt
+ -> /usr/local/texlive/2023basic/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+Requested font "msbm5" at 5.0pt
+ -> /usr/local/texlive/2023basic/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 3.
+ (/usr/local/texlive/2023basic/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
+Requested font "stmary10" at 10.0pt
+ -> /usr/local/texlive/2023basic/texmf-dist/fonts/tfm/public/stmaryrd/stmary10.tfm
+Requested font "stmary7" at 7.0pt
+ -> /usr/local/texlive/2023basic/texmf-dist/fonts/tfm/public/stmaryrd/stmary7.tfm
+Requested font "stmary5" at 5.0pt
+ -> /usr/local/texlive/2023basic/texmf-dist/fonts/tfm/public/stmaryrd/stmary5.tfm
 )
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
  [1
 
-] [2] (./main.bbl
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-) [3] (./main.aux)
+]
+LaTeX Font Info:    Font shape `TU/XCharter(0)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 82.
+Requested font "[XCharter-Roman.otf]/OT:script=latn;language=dflt;+tnum;+lnum;+cv01=0;mapping=tex-text;" at 12.0pt
+ -> /usr/local/texlive/2023basic/texmf-dist/fonts/opentype/public/xcharter/XCharter-Roman.otf
+LaTeX Font Info:    Font shape `TU/XCharter(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 82.
+Requested font "[XCharter-Bold.otf]/OT:script=latn;language=dflt;+tnum;+lnum;+cv01=0;mapping=tex-text;" at 12.0pt
+ -> /usr/local/texlive/2023basic/texmf-dist/fonts/opentype/public/xcharter/XCharter-Bold.otf
+ [2] [3] [4]
+LaTeX Font Info:    Font shape `TU/XCharter(0)/m/it' will be
+(Font)              scaled to size 10.0pt on input line 181.
+Requested font "[XCharter-Italic.otf]/OT:script=latn;language=dflt;+tnum;+lnum;+cv01=0;mapping=tex-text;" at 10.0pt
+ -> /usr/local/texlive/2023basic/texmf-dist/fonts/opentype/public/xcharter/XCharter-Italic.otf
+ [5] [6] [7] [8] (./main.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-09>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9814C2D956916ADB9290ECA4E25C967A;103.
+(rerunfilecheck)             Checksum: 1156CEF8E43FB2E527E0CCE38668EC7D;3426.
  ) 
 Here is how much of TeX's memory you used:
- 28031 strings out of 476447
- 559486 string characters out of 5793879
- 1920186 words of memory out of 5000000
- 49448 multiletter control sequences out of 15000+600000
- 561563 words of font info for 56 fonts, out of 8000000 for 9000
+ 28098 strings out of 476447
+ 561060 string characters out of 5793879
+ 1930186 words of memory out of 5000000
+ 49496 multiletter control sequences out of 15000+600000
+ 563898 words of font info for 70 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 127i,5n,132p,598b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 127i,6n,132p,741b,466s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (4 pages, 11356 bytes).
+Output written on main.xdv (9 pages, 170460 bytes).

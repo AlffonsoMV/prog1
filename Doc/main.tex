@@ -5,14 +5,13 @@
 
 \input{structure.tex} 
 
-\title{PAMS's project} % Title of the assignment
+\title{Innovations in Neural Networks: PAMS's Project} % Title of the assignment
 
 \author{Alfonso Mateos Vicente\\ \texttt{alfonso.mateos-vicente@eleves.enpc.fr}} % Author name and email address
 
 \date{École des Ponts ParisTech} % University, school and/or department name(s) and a date
 
 %-----------------------------------------------------------------------------
-
 
 \begin{document}
 
@@ -22,7 +21,7 @@
         \vspace*{1cm}
         
         \Huge
-        \textbf{Extra work for the \textit{Introduction to Programming} course: Artificial Intelligence}
+        \textbf{Extra Work of \textit{Introduction to Programming}: A very first inmersion in Neural Networks}
         
         \vspace{1.5cm}
 
@@ -33,7 +32,7 @@
         Alfonso Mateos Vicente \\
         \vspace{0.5cm}
         \Large
-        \textbf{Tutor:} \\
+        \textbf{Mentor:} \\
         \vspace{0.25cm}
         \LARGE
         Prof. Pascal Monasse
@@ -45,7 +44,7 @@
         \vspace{1cm}
         
         \normalsize
-        Ingénierie Mathématique et Informatique \\
+        Mathematics and Computer Engineering \\
         École des Ponts ParisTech \\
         France \\
         November 20, 2023
@@ -59,20 +58,225 @@
 \newpage
 
 
-\section*{Preface}
-
-This report presents a personal exploration into the practical application of machine learning principles using C++. It documents the journey of constructing a basic neural network from scratch, emphasizing the direct application of classroom knowledge in a real-world context. This project aims to demonstrate the power of foundational programming skills in creating complex systems and to serve as a stepping stone for future endeavors in the field of machine learning.
-
 \section{Introduction}
 
+The exploration of neural networks is central to advancements in machine learning and deep learning. This report delves into the mathematical foundations and structural intricacies of neural networks, particularly emphasizing their application in image recognition and natural language processing tasks.
+
+Neural networks are, at their essence, a series of mathematical transformations that draw inspiration from the processing mechanisms of biological neurons. The fundamental operation in a neural network involves each neuron computing a weighted sum of its inputs, followed by the application of a non-linear activation function. This can be mathematically represented as:
+
+\begin{equation}
+    y = f\left(\sum_{i=1}^{n} w_i x_i + b\right)
+\end{equation}
+
+Here, \( x_i \) are the input values, \( w_i \) represent the weights assigned to these inputs, \( b \) is the bias, and \( f \) denotes the activation function. This equation encapsulates the core operation that enables neural networks to perform complex data transformations and learning.
+
+The report aims to dissect and elucidate the implementation and mathematical rigor behind the neural network's architecture. We focus on the linear algebra and calculus underpinning the network layers, activation functions, and learning algorithms. Special attention is given to the practical translation of these mathematical principles into efficient computational models, specifically in the realm of C++ programming.
+
+By examining the theoretical aspects alongside practical implementation, this report provides a comprehensive view of neural network functionality, from the initial input layer to the final output. The ultimate goal is to offer a clear understanding of how neural networks harness mathematical principles to learn from data and make predictions, thus serving as powerful tools in the field of artificial intelligence.
+
+
+\section{Implementation Insights}
+
+This section meticulously examines the project's implementation, emphasizing the mathematical underpinnings and their efficient transposition into C++ code.
+
+\subsection{Layer Implementations}
+
+In the development of our neural network model, a pivotal realization was that incorporating a variety of layer types significantly bolsters the network's efficacy and robustness. While the initial design was centered around the fully connected (Dense) layer, the introduction of dropout and batch normalization layers marked a significant enhancement in the network's architecture.
+
+Each layer in a neural network can be conceptualized as a distinct mathematical entity characterized by a set of variables and functions. Commonly, these elements include:
+
+\begin{itemize}
+    \item \textbf{Variables}:
+    \begin{itemize}
+        \item \textbf{Inputs}: The data points or signals entering the layer.
+        \item \textbf{Outputs}: The transformed data exiting the layer.
+        \item \textbf{Weights}: Parameters adjusting the strength of connections between neurons.
+        \item \textbf{Biases}: Parameters that shift the activation function curve, aiding in fitting.
+        \item \textbf{Deltas}: Gradients of the loss function with respect to the layer's outputs.
+        \item \textbf{Activation Function}: A non-linear function applied to the layer's output.
+    \end{itemize}
+    \item \textbf{Functions}:
+    \begin{itemize}
+        \item \textbf{Forward Pass}: Computes the output based on inputs, weights, and biases.
+        \item \textbf{Compute Deltas}: Calculates the error gradients for backpropagation.
+    \end{itemize}
+\end{itemize}
+
+In the following sections, we delve into the specific implementation and mathematical rationale behind each layer type.
+
+\subsubsection{Dense Layer}
+
+The Dense Layer, forming the backbone of the neural network, densely interconnects neurons from the preceding layer to those in the subsequent layer. Its primary function is to transform the input data linearly, followed by a non-linear activation. The output of a neuron in the Dense Layer is computed as:
+
+\begin{equation}
+    y_j = f\left(\sum_{i=1}^{n} w_{ji} x_i + b_j\right)
+\end{equation}
+
+Here, \( w_{ji} \) represents the weight connecting the \( i \)-th input neuron to the \( j \)-th output neuron, \( x_i \) is the input, \( b_j \) is the bias, and \( f \) is the activation function. This layer is crucial for learning high-level features from the input data.
+
+\subsubsection{Dropout Layer}
+
+The Dropout Layer is an ingenious solution to mitigate the issue of overfitting, a common challenge in neural network training. It randomly inactivates a subset of neurons during the training phase, which prevents the network from becoming overly reliant on any specific neuron. Mathematically, the output of the Dropout Layer is given by:
+
+\begin{equation}
+    y_i = x_i \cdot D_i
+\end{equation}
+
+where \( x_i \) is the input, \( y_i \) is the output, and \( D_i \) is a binary random variable that follows a Bernoulli distribution, determining whether the neuron is active or dropped.
+
+\subsubsection{Batch Normalization Layer}
+
+The Batch Normalization Layer addresses the issue of internal covariate shift by normalizing the layer inputs for each mini-batch. This process makes the training more stable and accelerates the convergence of the training process. The normalization is performed as follows:
+
+\begin{equation}
+    \hat{x}_i = \frac{x_i - \mu_B}{\sqrt{\sigma_B^2 + \epsilon}}
+\end{equation}
+
+Here, \( x_i \) is the input, \( \mu_B \) and \( \sigma_B^2 \) are the mean and variance of the inputs calculated over the mini-batch, and \( \epsilon \) is a small constant added for numerical stability. This layer significantly enhances the network's performance, especially in deeper architectures.
+
+\subsection{Neural Network Assembly}
+
+The architecture of our neural network is composed of a sequence of layers, each contributing uniquely to the network's functionality. The network is structured as a vector of these layers, with critical elements including the management of layer parameters and the gradients associated with them. Key functions implemented in this architecture include:
+
+\begin{enumerate}
+    \item \textbf{addLayer}: Integrates a new layer into the network, expanding its depth and capabilities.
+    \item \textbf{trains}: Facilitates the training process of the network using provided data.
+    \item \textbf{predict}: Generates output predictions based on the learned parameters.
+    \item \textbf{updateWeightsAndBiases}: Modifies the network's weights and biases, based on the gradients computed during training.
+    \item \textbf{initializeGradientAccumulators}: Sets up structures for accumulating gradient information over batches.
+    \item \textbf{accumulateGradients}: Gathers gradient information during backpropagation.
+    \item \textbf{applyAccumulatedGradients}: Applies the accumulated gradients to update the network's parameters.
+\end{enumerate}
+
+\subsubsection{Training Methodology}
+
+The training of our network is governed by the principles of stochastic gradient descent (SGD), an optimization algorithm that updates the network's parameters iteratively. This process is mathematically represented as:
+
+\begin{equation}
+    \theta_{t+1} = \theta_t - \alpha \nabla L(\theta_t)
+\end{equation}
+
+where \( \theta \) denotes the network parameters (weights and biases), \( \alpha \) is the learning rate, and \( \nabla L(\theta_t) \) is the gradient of the loss function with respect to the parameters. The training process involves initialization of parameters, iterating over epochs, processing mini-batches, and conducting forward and backward propagation to update the network parameters.
+
+\subsubsection{Activation Functions}
+
+Activation functions are crucial in introducing non-linearity to the network, allowing it to learn and model complex relationships. We utilize several activation functions, each with its unique characteristics:
+
+- \textbf{Sigmoid Function}: The Sigmoid function is particularly effective in squashing the output between 0 and 1, making it ideal for binary classification tasks. It is mathematically described as:
+
+\begin{equation}
+    \sigma(x) = \frac{1}{1 + e^{-x}}
+\end{equation}
+
+- \textbf{ReLU Function}: The Rectified Linear Unit (ReLU) is widely used due to its computational efficiency and effectiveness in mitigating the vanishing gradient problem. It is defined as:
+
+\begin{equation}
+    ReLU(x) = max(0, x)
+\end{equation}
+
+ReLU promotes faster convergence in SGD by maintaining a linear behavior for positive inputs while nullifying negative inputs, thus simplifying the optimization landscape.
+
+\section{Experimental Results}
+
+With the neural network already implemented, we wanted to prove if it was really working. For this aims we started with the usual logical problems, this is using the logical doors like AND, OR etc. to know if it was working. When we achieved good results with each door, we thought that maybe we could take a bigger dataset and give it to the neural network to see what happens. With this idea in mind we landed to the \textit{Adult dataset} provided by \textit{https://archive.ics.uci.edu/dataset/2/adult}. The idea of this dataset is to predict whether income exceeds 50.000\$ per year based on census data. Also known as ``Census Income'' dataset.
+
+\subsection{Census Income Dataset}
+
+The \textit{Adult} dataset, also known as the \textit{Census Income} dataset, is a widely-used benchmark in machine learning for classification tasks. It is designed to predict whether a person's income exceeds \$50,000 per year based on census data.
+
+\subsubsection{Dataset Characteristics}
+
+\begin{itemize}
+    \item \textbf{Number of Instances:} 48,842
+    \item \textbf{Number of Features:} 14
+    \item \textbf{Feature Types:} Categorical, Integer
+    \item \textbf{Associated Tasks:} Classification
+    \item \textbf{Missing Values:} Yes
+\end{itemize}
+
+\subsubsection{Feature Description}
+
+The dataset consists of the following features:
+\begin{enumerate}
+    \item \textbf{age:} Continuous (integer).
+    \item \textbf{workclass:} Categorical (e.g., Private, State-gov, Federal-gov).
+    \item \textbf{fnlwgt:} Continuous (integer).
+    \item \textbf{education:} Categorical (e.g., Bachelors, HS-grad, 11th).
+    \item \textbf{education-num:} Continuous (integer).
+    \item \textbf{marital-status:} Categorical (e.g., Married-civ-spouse, Never-married).
+    \item \textbf{occupation:} Categorical (e.g., Tech-support, Craft-repair).
+    \item \textbf{relationship:} Categorical (e.g., Wife, Own-child, Husband).
+    \item \textbf{race:} Categorical (e.g., White, Black, Asian-Pac-Islander).
+    \item \textbf{sex:} Binary (Female, Male).
+    \item \textbf{capital-gain:} Continuous (integer).
+    \item \textbf{capital-loss:} Continuous (integer).
+    \item \textbf{hours-per-week:} Continuous (integer).
+    \item \textbf{native-country:} Categorical (e.g., United-States, India).
+\end{enumerate}
+The target variable is \textbf{income}, which is binary (>\$50K, <=\$50K).
+
+\subsubsection{Additional Information}
+
+The dataset was extracted by Barry Becker from the 1994 Census database. The extraction criteria were: ((AAGE>16) \&\& (AGI>100) \&\& (AFNLWGT>1) \&\& (HRSWK>0)). The prediction task is to determine whether a person makes over \$50K a year.
+
+\subsection{Preprocessing the Dataset}
+
+Before introducing the dataset into our neural network, a crucial preprocessing step is required. Since the neural network cannot directly interpret strings and categorical data, these need to be transformed into a numerical format, specifically normalized to a range between 0 and 1.
+
+\subsubsection{Binary Items}
+Binary items represent the simplest case for preprocessing. We map the dataset's binary attributes to 0 for one category (e.g., `False`, `No`, `Male`) and to 1 for the other (e.g., `True`, `Yes`, `Female`).
+
+\subsubsection{Continuous Items}
+For continuous features, normalization is performed by dividing each value by the maximum value in that feature column. This approach scales the feature to a [0, 1] range, making it suitable for neural network processing.
+
+\subsubsection{Categorical Items}
+Categorical features require a more nuanced approach. We employ a technique of indexing followed by normalization. To illustrate, consider a feature with three categories: yellow, green, and red apples. We first assign each category an index (e.g., yellow = 0, green = 1, red = 2). Next, we normalize these indices by dividing by the total number of categories. In this example, a yellow apple would be represented as $0/3 = 0$, a green as $1/3 \approx 0.3333$, and a red as $2/3 \approx 0.6666$. This process effectively encodes categorical data into a numerical format that a neural network can interpret.
+
+\subsubsection{Training and Test Set}
+
+The final preprocessing step involves dividing the dataset into training and testing subsets. We allocate 80\% of the data for training the model and reserve the remaining 20\% for testing. This split helps in evaluating the model's performance and in checking for overfitting, despite the use of techniques like dropout layers in our neural network. Therefore the training set has 26047 rows and the test dataset has 6512 after processing the dataset.
+
+\subsection{Neural Network Architecture}
+
+For our experiment, we designed a neural network with the following specifications:
+
+\begin{itemize}
+    \item \textbf{Training Mode:} Stochastic
+    \item \textbf{Layer 1:} Dropout Layer with a dropout probability of 0.01 to prevent overfitting.
+    \item \textbf{Layer 2:} Batch Normalization Layer to normalize inputs for 13 features, enhancing training stability.
+    \item \textbf{Layer 3:} Fully Connected Layer transitioning from 13 to 8 neurons, utilizing TanH activation for non-linear transformation.
+    \item \textbf{Layer 4:} Fully Connected Layer narrowing down from 8 to 1 neuron, with Sigmoid activation for binary classification.
+    \item \textbf{Number of Epochs:} 100, allowing ample iterations for network training.
+    \item \textbf{Learning Rate:} 0.05, chosen to balance the speed and stability of the learning process.
+\end{itemize}
+
+\subsection{Results and Analysis}
+
+The neural network was trained on the dataset, and the progression of loss over epochs was meticulously recorded:
+
+\begin{center}
+    \begin{tabular}{cc}
+        \hline
+        Epoch & Loss \\
+        \hline
+        1 & 0.147021 \\
+        2 & 0.132685 \\
+        3 & 0.128960 \\
+        4 & 0.127195 \\
+        5 & 0.123872 \\
+        ... & ... \\
+        100 & 0.107419 \\
+        \hline
+    \end{tabular}
+\end{center}
+
+
+A notable consistent decrease in loss was observed, indicating effective learning. The loss reduced from 0.147021 in the first epoch to 0.107419 by the final, 100th epoch. 
+
+Crucially, the loss on the test dataset was calculated to be 0.108675, closely aligning with the training loss. This proximity in values suggests that the model is not overfitting the training data and is generalizing well to unseen data. Such a result is indicative of a well-tuned model, demonstrating the efficacy of the chosen architecture and training parameters.
 
 
 
 
 
-
-
-\newpage
-\bibliographystyle{plain}
-\bibliography{mybib.bib}
 \end{document}
