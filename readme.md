@@ -19,12 +19,12 @@ The neural network demonstrated effective learning with a consistent decrease in
 ## Usage
 To use this project:
 1. Clone the repository.
-2. Install required dependencies (list dependencies here).
-3. Run the main program (specify the command).
+2. Install required dependencies.
+3. Run the main program.
 
 ## Dependencies
 - C++ Compiler
-- Additional Libraries (if any)
+- Additional Libraries (Imagine++)
 
 ## Acknowledgements
 Special thanks to Prof. Pascal Monasse for his guidance and support in this project.
