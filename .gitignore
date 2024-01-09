@@ -1,0 +1,15 @@
+Doc/*.aux
+Doc/*.bbl
+Doc/*.log
+Doc/*.out
+Doc/*.blg
+Doc/*.toc
+Doc/*.synctex.gz
+Doc/*.fdb_latexmk
+Doc/*.fls
+Doc/*.gz
+Doc/*.xml
+
+Code/NeuralNetwork/build/
+
+.vscode/
