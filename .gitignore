@@ -13,3 +13,6 @@ Doc/*.xml
 Code/NeuralNetwork/build/
 
 .vscode/
+
+.DS_Store
+.gitignore
