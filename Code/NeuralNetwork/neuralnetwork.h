@@ -1,7 +1,7 @@
 #ifndef NEURALNETWORK_H
 #define NEURALNETWORK_H
 
-#include "Layer.h"
+#include "layer.h"
 #include <vector>
 #include <utility>
 
@@ -15,6 +15,7 @@ public:
     void addLayer(Layer* l);
     void train(std::vector<std::pair<std::vector<double>, std::vector<double>>> dataset, int epochs, TrainingMode mode, double learningRate = 0.01);
     std::vector<double> predict(const std::vector<double>& input);
+    ~NeuralNetwork();
 
 private:
     std::vector<Layer*> layers;

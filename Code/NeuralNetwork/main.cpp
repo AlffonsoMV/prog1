@@ -1,16 +1,13 @@
 #include "neuralnetwork.h"
-#include "LayerFullyConnected.h"
-#include "DropoutLayer.h"
-#include "LayerBatchNorm.h"
+#include "layerfullyconnected.h"
+#include "dropoutlayer.h"
+#include "layerbatchnorm.h"
 
 #include <iostream>
 #include <fstream>
 #include <sstream>
 #include <vector>
 #include <string>
-
-#include <Imagine/Graphics.h>
-using namespace Imagine;
 
 std::vector<std::pair<std::vector<double>, std::vector<double>>> readCSV(const std::string& filename) {
     std::vector<std::pair<std::vector<double>, std::vector<double>>> dataset;
@@ -60,7 +57,7 @@ int main() {
     nn.addLayer(new LayerFullyConnected(8, 1, new Sigmoid()));
 
     // Training dataset
-    const std::string filename = srcPath("./train.csv");
+    const std::string filename = srcPath "./train.csv";
     auto dataset = readCSV(filename);
 
     // Training phase
@@ -72,7 +69,7 @@ int main() {
     // ----- RESULTS SECTION -----
 
     // Test dataset
-    const std::string filenameTest = srcPath("./test.csv");
+    const std::string filenameTest = srcPath "./test.csv";
     auto dataset2 = readCSV(filenameTest);
 
     double totalLoss = 0.0;

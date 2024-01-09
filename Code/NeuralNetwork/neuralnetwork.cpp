@@ -1,4 +1,4 @@
-#include "NeuralNetwork.h"
+#include "neuralnetwork.h"
 #include <iostream>
 
 void NeuralNetwork::addLayer(Layer* l) {
@@ -111,4 +111,9 @@ std::vector<double> NeuralNetwork::predict(const std::vector<double>& input) {
         currentInput = layer->outputs;
     }
     return layers.back()->outputs;
+}
+
+NeuralNetwork::~NeuralNetwork() {
+    for (auto layer : layers)
+        delete layer;
 }

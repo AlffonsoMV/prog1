@@ -1,7 +1,7 @@
 #ifndef LAYERDROPOUT_H
 #define LAYERDROPOUT_H
 
-#include "Layer.h"
+#include "layer.h"
 #include <vector>
 
 class DropoutLayer : public Layer

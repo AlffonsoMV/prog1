@@ -4,7 +4,7 @@
 
 #include "activation.h"
 #include <vector>
-#include "Layer.h"
+#include "layer.h"
 
 class LayerFullyConnected : public Layer
 {

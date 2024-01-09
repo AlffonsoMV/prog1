@@ -22,9 +22,5 @@ To use this project:
 2. Install required dependencies.
 3. Run the main program.
 
-## Dependencies
-- C++ Compiler
-- Additional Libraries (Imagine++)
-
 ## Acknowledgements
 Special thanks to Prof. Pascal Monasse for his guidance and support in this project.
